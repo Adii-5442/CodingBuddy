@@ -105,7 +105,7 @@ const HomeScreen = () => {
                         onFinish={handleTimerFinish}
                         digitStyle={{backgroundColor: '#FAB913', Width: 2, Color: '#000000'}}
                         digitTxtStyle={{color: 'black'}}
-                        onPress={() => Alert.alert("Kyu ungli kar ra hai","Upsolve hi kar le tab tak")}
+                        onPress={() => Alert.alert("Kyu ungli kar ra hai","Upsolve hi kar le \n tab tak")}
                         // onChange = { ()=> {
                         //   if(item.status != '❗Expiring Soon' && item.status != 'Ready For Pickup' && (item.time*60 - elapsedTime)<=300 && (item.time*60 - elapsedTime)>100){
                         //     console.log(item.name)
@@ -125,8 +125,6 @@ const HomeScreen = () => {
               <View >
                     <Text style={{color:item.statusColor? item.statusColor : 'black',alignItems:'flex-start',fontWeight:'bold'}}>Duration : {item.durationSeconds / (60*60)} Hours</Text>
               </View>
-              
-              
             </TouchableOpacity>
           );
 
